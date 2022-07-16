@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blazor App - Home</title>
+   <!-- Font Icons-->
+   <link rel="stylesheet" href="bootstrap-icons.css">
+   <!-- CSS FILE =================-->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="info"></div>
+<!-- Start Section Part 1 ===============================-->   
+<main class="d-md-none">
+   <nav class="navbar bg-light py-4 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BlazorApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BlozorApp</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link fs-3 " aria-current="page" href="index.html"><i class="me-3 bi bi-house-door"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3" href="customer.html"><i class="me-3 bi bi-person-circle"></i> Customer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav> 
+</main> 
+<!-- End Section Part 1 ================================= -->
+<!-- Start Section Part 2 =================================-->      
+<main class="">
+  <div>
+    <span id="closeBtn" onclick="closeNavebar()" >
+      <i class="bi bi-x-lg"></i>
+    </span>
+    <span id="openBtn" onclick="openNavebar()">
+      <i class="bi bi-list"></i>
+    </span>
+  </div>
+<section class="Header" >
+ <div class="container-fluid">
+ <div class="row">  
+    <div class="col-md-3 d-none d-md-block section-left g-0 " style="height: 100vh ;" id="hideNavbar">
+        <a class="navbar-brand" href="#">BlazorApp</a>
+
+        <ul class="navbar-nav mt-5 ">
+            <li class="nav-item">
+              <a class="nav-link fs-4 " aria-current="page" href="index.html"><i class="me-3 bi bi-house-door"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="customer.html"><i class="me-3 bi bi-person-circle"></i> Customer</a>
+            </li>
+          </ul>
+    </div>
+    <div class="col-md-8 offset-lg-1 py-5 section-right">
+        <div class="Home-title">
+            <h1>Hello , World!</h1>
+            <p>Welcome To Your New App.</p>    
+     </div>
+      <div class="aleart shadow-lg p-3 my-3">
+         <h3>
+            <span class="text-info fw-bold me-2"><i class="bi bi-pencil"></i> </span>
+            <span class="fst-italic ">How Is Blazor Working For You ?</span>
+         </h3>
+         <p class="fst-italic ms-5">
+            Please tell us what you think
+         </p>
+      </div> 
+      <div class="today fs-2">
+         <span>Today Is : </span>
+         <span id="today" class="text-warning text-decoration-underline"> </span>
+      </div>
+    </div>
+ </div>
+ </div>
+</section>
+</main>
+<!-- End Section Part 2 ====================================-->   
+
+   <!-- Script File =====================-->
+   <script src="js/bootstrap.bundle.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

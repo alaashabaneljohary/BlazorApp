@@ -1,0 +1,210 @@
+/* Start Section Part 1 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+.offcanvas
+{
+    background: linear-gradient(to top  , #5b4f7f , #390647);
+    color: #FFF;
+}
+.navbar 
+{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.nav-link 
+{
+    color: #FFF;
+    transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -ms-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+}
+.nav-link:hover 
+{
+    color: #FFF;
+    background-color: #5b4f7f;
+}
+/* End Section Part 1  */
+/* Start Section Part 2 */
+.aleart
+{
+   background-color: #FFFFFF;
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   
+}
+@media screen and (min-width:991px) {
+    .aleart {
+        width: 600px;
+    }
+}
+.btn-close  
+{
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* End Section Part 2  */
+
+/* Start Section Customer ================== */
+.customer , .section-left
+{
+    background: linear-gradient(to top  , #260070 , #390647);
+}
+.customer .navbar-brand
+{
+    color: #FFFFFF;
+    background-color: #06153b;
+    width: 100%;
+    padding: 15px ;
+    font-size: 25px;
+    letter-spacing: 3px;
+} 
+
+.Header .section-left .navbar-brand{
+    color: #FFFFFF;
+    background-color: #06153b;
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.Header .section-right 
+{
+    margin-top: 100px;
+}
+.heading 
+{
+    background-color: #04163c;
+    position: relative;
+}
+.heading::after 
+{
+    position: absolute;
+    content: "";
+    width: 90%;
+    border-bottom: 2px solid #DDD;
+    top: -12px;
+}
+.heading::before 
+{
+    position: absolute;
+    content: "";
+    width: 90%;
+    border-bottom: 2px solid #DDD;
+    bottom: -12px;
+}
+@media screen and (max-width:991px){
+     .heading 
+{
+           display: flex;
+           flex-direction: column;
+}
+}
+.heading .btn 
+{
+    background-color: cornflowerblue;
+    color: #FFFFFF;
+}
+
+
+#formInput 
+{
+    display: none;
+}
+
+.customeList 
+{
+    background-color: #260070;
+    color: #FFF;
+}
+
+.heading .btn 
+{
+    width: 200px;
+   
+}
+#closeBtn , #openBtn 
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+#openBtn
+{
+    background-color: brown;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+  
+}
+#closeBtn
+{
+    background-color: cornflowerblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+#hideNavbar 
+    {
+/*visibility: visible;
+*/transform: scaleX(1);
+-webkit-transform: scaleX(1);
+-moz-transform: scaleX(1);
+-ms-transform: scaleX(1);
+-o-transform: scaleX(1);
+transition: all 0.8s linear;
+-webkit-transition: all 0.8s linear;
+-moz-transition: all 0.8s linear;
+-ms-transition: all 0.8s linear;
+-o-transition: all 0.8s linear;
+}
+
+
+#demo , #info
+{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: cornflowerblue;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 9999999999999999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

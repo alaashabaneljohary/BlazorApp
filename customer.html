@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blazor App - Customers</title>
+   <!-- Font Icons-->
+   <link rel="stylesheet" href="bootstrap-icons.css">
+   <!-- CSS FILE =================-->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="demo"></div>
+<!-- Start Section Navbar=================================-->
+<nav class="navbar bg-light fixed-top d-lg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Blazor App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Blazor App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer.html"> Customers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Section Navbar======================================-->
+<!-- Start Section Customer Details ==========================-->
+<div class="Customer overflow-hidden ">
+ <div class="container-fluid">
+  <div class="row p-0 ">
+    <div class="col-lg-3 g-0 d-none d-lg-block">
+      <nav class="navbar navbar-expand-lg bg-light d-flex flex-column customer" style="height: 100vh;">
+        <div class="container d-flex flex-column align-items-start">
+          <a class="navbar-brand" href="#">BlazorApp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-5 mb-2 mb-lg-0 d-flex flex-column">
+              <li class="nav-item mb-3">
+                <a class="nav-link text-light fs-5" aria-current="page" href="index.html"><i class="me-3 bi bi-house-door"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="customer.html"><i class="me-3 bi bi-person-circle"></i> Customers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-lg-9 g-0 mt-5 pt-3">
+      <div class=" heading mb-3 w-100  d-flex justify-content-between align-items-center p-2 ">
+        <h5 class="text-light ">Add New Customer Details </h5>
+        <button class="btn border-0"  onclick="showData()">Add New Customer</button>
+      </div> <!-- ./heading -->
+      <div id="formInput" class="shadow-lg p-3">
+        <label for="customeCode">Customer Code</label>
+        <input type="text" id="customeCode" class="form-control ">
+  
+        <label for="customeName">Customer Name</label>
+        <input type="text" id="customeName" class="form-control">
+      
+        <label for="customeEmail">Customer Email</label>
+        <input type="text" id="customeEmail" class="form-control">
+        
+        <label for="customePhone">Customer Phone</label>
+        <input type="text" id="customePhone" class="form-control">
+        <button class="btn btn-success mt-4" onclick="creatData()" id="save">Save</button>
+      </div>  <!-- #/formInput-->
+      <div class="customeList my-3 py-2">
+        <h5 class="ms-3">Customer List</h5>
+      </div>
+       <div class="container-fluid  shadow-lg">
+        <div class=" table-responsive ">
+         <table class="table text-center">
+          <thead class="table-active">
+            <th>ID</th>
+            <th>C. Code</th>
+            <th>C. Name</th>
+            <th>Email</th>
+            <th>Phone</th>  
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Remove</th>
+          </thead>
+          <tbody id="tableRow">
+          </tbody>
+         </table>
+        </div>
+       </div>  
+    </div>  <!-- ./col-lg-9-->
+  </div>  <!-- ./row-->
+ </div> <!--./container-->
+</div> <!-- ./customer-->
+<!-- End Section Customer Details ==========================-->
+   <!-- Script File =====================-->
+   <script src="js/bootstrap.bundle.js"></script>
+   <script src="js/customer.js"></script>
+</body>
+</html>
